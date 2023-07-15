@@ -1,9 +1,17 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    outline: none;
+  }
+  
 body{
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: black;
 }
+
+
+/* bg video */
 #myVideo {
     position: absolute;
     right: 0;
@@ -13,6 +21,10 @@ body{
     z-index: -2;
     zoom: 1%;
   }
+
+
+
+  /* background */
 body::before{
     content: " ";
     position: absolute;
@@ -26,6 +38,9 @@ body::before{
     opacity: 20%;
 }
 
+
+
+/* navbar */
 .navbar-container{
     /* backdrop-filter: blur(30px);
     box-shadow:0px 0px 50px cyan inset; */
@@ -35,7 +50,6 @@ body::before{
     align-items: center;
     height: 100%;
 }
-
 .logo{
     width: 60px;
     height: 50px;
@@ -72,23 +86,128 @@ li a{
     padding-top: 14px;
 }
 
+
+
+/* section one*/
 .one{
 height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
 }
-.landing-page{
+
+/* hover effect */
+h1 {
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    left: 15%;
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     letter-spacing: 8px;
     font-family: 'Roboto Slab', sans-serif;
-    box-shadow: 60px 0px 10px 10px black;
     width: 70%;
-    background-color: rgba(169, 174, 175, 0.671);
     border-radius: 100%;
-    text-shadow: 6px 1px black;
-}
+    /* text-shadow: 8px 4px rgb(96, 93, 93); */
+  }
+  h1:hover:before, h1:hover:after {
+    position: absolute;
+    content: "STUDENT COUNCIL OF ARTIFICIAL INTELLIGENCE";
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  h1:hover:before {
+    top: 49.5%;
+    left: 49.5%;
+    color: rgba(233, 30, 99, 0.8);
+    animation: distort1 300ms linear infinite;
+  }
+  h1:hover:after {
+    top: 50.5%;
+    left: 50.5%;
+    color: rgba(3, 169, 244, 0.8);
+    animation: distort2 300ms linear infinite;
+  }
+  @keyframes distort1 {
+    0% {
+      top: 49.5%;
+      left: 49.5%;
+    }
+    12.5% {
+      top: 49.5%;
+      left: 50%;
+    }
+    25% {
+      top: 49.5%;
+      left: 50.5%;
+    }
+    37.5% {
+      top: 50%;
+      left: 50.5%;
+    }
+    50% {
+      top: 50.5%;
+      left: 50.5%;
+    }
+    62.5% {
+      top: 50.5%;
+      left: 50%;
+    }
+    75% {
+      top: 50.5%;
+      left: 49.5%;
+    }
+    87.5% {
+      top: 50%;
+      left: 49.5%;
+    }
+    100% {
+      top: 49.5%;
+      left: 49.5%;
+    }
+  }
+  @keyframes distort2 {
+    0% {
+      top: 50.5%;
+      left: 50.5%;
+    }
+    12.5% {
+      top: 50%;
+      left: 50.5%;
+    }
+    25% {
+      top: 49.5%;
+      left: 50.5%;
+    }
+    37.5% {
+      top: 49.5%;
+      left: 50%;
+    }
+    50% {
+      top: 49.5%;
+      left: 49.5%;
+    }
+    62.5% {
+      top: 50%;
+      left: 49.5%;
+    }
+    75% {
+      top: 50.5%;
+      left: 49.5%;
+    }
+    87.5% {
+      top: 50.5%;
+      left: 50%;
+    }
+    100% {
+      top: 50.5%;
+      left: 50.5%;
+    }
+  }
+  
+
+/* section two */
 .two{
     height: 100vh;
     width: 100%;
@@ -98,3 +217,17 @@ align-items: center;
 .intro{
     background-color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
