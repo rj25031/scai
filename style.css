@@ -131,14 +131,16 @@ align-items: center;
   top: 49.5%;
   left: 49.5%;
   /* color: rgba(233, 30, 99, 0.8); */
-  color: rgb(182 183 183 / 79%);
+  /* color: rgb(182 183 183 / 79%); */
+  color: rgb(137, 186, 204);
   animation: distort1 10s linear infinite;
 }
 #head:after {
   top: 50.5%;
   left: 50.5%;
   /* color: rgba(3, 169, 244, 0.8); */
-  color: #3a3f42a1;
+  /* color: #3a3f42a1; */
+  color: rgb(74 84 90);
   animation: distort2 10s linear infinite;
 }
 @keyframes distort1 {
@@ -242,6 +244,7 @@ align-items: center;
   top: 50px;
   text-align: center;
   margin-top: 40px;
+  z-index: 1;
 }
 
 .container {
@@ -251,6 +254,8 @@ align-items: center;
   width: 80%;
   height: 100%;
   background-color: grey;
+  position: absolute;
+  z-index: 0;
 }
 
 .About {
