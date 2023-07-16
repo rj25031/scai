@@ -1,12 +1,11 @@
-// Get the video element
-const video = document.querySelector('video');
-// Listen for the scroll event
-window.addEventListener('scroll', function() {
-  // Calculate the amount scrolled vertically
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  
-  // Update the video position
-  video.style.top = `${-scrollTop}px`;
-});
+const video = document.getElementById('myVideo');
+const navbar = document.getElementById('navbar')
+
+window.addEventListener('scroll',()=>{
+    navbar.classList.toggle('scroll',window.scrollY > 0);
+})
+
+video.playbackRate = 0.5;
+// video.pause();
 
 
