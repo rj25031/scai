@@ -73,7 +73,7 @@ height: 50px;
   justify-content: flex-end;
   align-items: center;
 }
-.navbar{
+.left-navbar{
   width: 30%;
 }
 .nav ul{
@@ -112,7 +112,7 @@ align-items: center;
   display: inline-block;
   position: absolute;
   top: 60%;
-  left: 15%;
+  left: 5%;
   color: white;
   font-size: 70px;
   letter-spacing: 8px;
@@ -125,6 +125,7 @@ align-items: center;
   content: "STUDENT COUNCIL OF ARTIFICIAL INTELLIGENCE";
   width: 100%;
   transform: translate(-50%, -50%);
+  text-align: start;
   z-index: -1;
 }
 #head:before {
