@@ -34,14 +34,6 @@ body::before{
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    width: 100%;
-    transition: all 0.3s ease;
-    padding: 50px;
-}
-.scroll{
-  backdrop-filter: blur(30px);
-  box-shadow:0px 0px 50px rgb(59, 60, 60) inset;
-  padding: 0px;
 }
 .logo{
     width: 60px;
@@ -87,7 +79,7 @@ align-items: center;
 }
 
 /* hover effect */
-#head {
+h1 {
     display: inline-block;
     position: absolute;
     top: 25%;
@@ -100,102 +92,101 @@ align-items: center;
     width: 70%;
     background-color: rgba(169, 174, 175, 0.671);
     border-radius: 100%;
+    /* text-shadow: 8px 4px rgb(96, 93, 93); */
   }
-  #head:before, #head:after {
+  h1:hover:before, h1:hover:after {
     position: absolute;
     content: "STUDENT COUNCIL OF ARTIFICIAL INTELLIGENCE";
     width: 100%;
     transform: translate(-50%, -50%);
     z-index: -1;
   }
-  #head:before {
+  h1:hover:before {
     top: 49.5%;
     left: 49.5%;
-    /* color: rgba(233, 30, 99, 0.8); */
-    color: rgb(14, 161, 198);
-    animation: distort1 10s linear infinite;
+    color: rgba(233, 30, 99, 0.8);
+    animation: distort1 300ms linear infinite;
   }
-  #head:after {
+  h1:hover:after {
     top: 50.5%;
     left: 50.5%;
-    /* color: rgba(3, 169, 244, 0.8); */
-    color: rgb(49, 49, 49);
-    animation: distort2 10s linear infinite;
+    color: rgba(3, 169, 244, 0.8);
+    animation: distort2 300ms linear infinite;
   }
   @keyframes distort1 {
     0% {
-      top: 49.6%;
-      left: 49.6%;
+      top: 49.5%;
+      left: 49.5%;
     }
     12.5% {
-      top: 49.6%;
+      top: 49.5%;
       left: 50%;
     }
     25% {
-      top: 49.6%;
-      left: 50.6%;
+      top: 49.5%;
+      left: 50.5%;
     }
     37.5% {
       top: 50%;
       left: 50.5%;
     }
     50% {
-      top: 50.6%;
-      left: 50.6%;
+      top: 50.5%;
+      left: 50.5%;
     }
     62.5% {
-      top: 50.6%;
+      top: 50.5%;
       left: 50%;
     }
     75% {
-      top: 50.6%;
-      left: 49.6%;
+      top: 50.5%;
+      left: 49.5%;
     }
     87.5% {
       top: 50%;
-      left: 49.6%;
+      left: 49.5%;
     }
     100% {
-      top: 49.6%;
-      left: 49.6%;
+      top: 49.5%;
+      left: 49.5%;
     }
   }
   @keyframes distort2 {
     0% {
-      top: 50.6%;
-      left: 50.6%;
+      top: 50.5%;
+      left: 50.5%;
     }
     12.5% {
       top: 50%;
-      left: 50.6%;
+      left: 50.5%;
     }
     25% {
-      top: 49.6%;
-      left: 50.6%;
+      top: 49.5%;
+      left: 50.5%;
     }
     37.5% {
-      top: 49.6%;
+      top: 49.5%;
       left: 50%;
     }
     50% {
-      top: 49.6%;
-      left: 49.6%;
+      top: 49.5%;
+      left: 49.5%;
     }
     62.5% {
       top: 50%;
-      left: 49.6%;
+      left: 49.5%;
     }
     75% {
-      top: 50.6%;
-      left: 49.6%;
+      top: 50.5%;
+      left: 49.5%;
     }
     87.5% {
-      top: 50.6%;
+      top: 50.5%;
       left: 50%;
     }
     100% {
-      top: 50.6%;
-      left: 50.6%;
+      top: 50.5%;
+      left: 50.5%;
     }
   }
   
